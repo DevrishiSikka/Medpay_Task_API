@@ -20,7 +20,7 @@ Build a publisher/subscribe model to process streaming data and provide an up-to
 3. Run the FastAPI application:
    
    ```bash
-   uvicorn main:app --reload
+   uvicorn app.main:app --reload
 
 4. Access the API
     
