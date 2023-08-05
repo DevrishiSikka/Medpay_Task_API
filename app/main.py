@@ -20,3 +20,8 @@ app.include_router(CategoryOperations.router)
 @app.get('/')
 def Ping():
     return {"message" : "Welcome"}
+
+
+if __name__ == '__main__':
+    import uvicorn
+    uvicorn.run(app, port=8000)
