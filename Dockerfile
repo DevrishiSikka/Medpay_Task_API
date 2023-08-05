@@ -16,4 +16,5 @@ COPY . .
 EXPOSE 8000
 
 # Run the application
-CMD ["uvicorn", "app.main:app"]
+CMD ["gunicorn", "-w", "4", "-k", "uvicorn.workers.UvicornWorker", "app.main:app"]
+
