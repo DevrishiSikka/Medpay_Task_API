@@ -1,4 +1,4 @@
-# # Medpay-Task
+# # Medpay-Task ( Devrishi Sikka )
 
 Build a publisher/subscribe model to process streaming data and provide an up-to-date view of incoming data.
 
@@ -65,3 +65,19 @@ Build a publisher/subscribe model to process streaming data and provide an up-to
    ```Dockerfile
    docker run -dp 80:8000 <IMAGE_NAME>
    ```
+
+
+# Info File
+
+app/main.py: Main FastAPI application file with API routes and configurations.
+
+data/transaction.csv: Contains transaction data.
+
+data/sku_info.csv: Contains SKU information.
+
+routers/CategoryOperations.py: Contains API endpoints for category-related operations.
+
+routers/SKUOperations.py: Contains API endpoints for SKU-related operations.
+
+routers/Transactions.py: Contains API endpoints for transaction-related operations.
+
