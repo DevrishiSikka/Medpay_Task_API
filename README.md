@@ -1,5 +1,4 @@
 # # Medpay-Task
-# FastAPI Streaming Data Processing
 
 Build a publisher/subscribe model to process streaming data and provide an up-to-date view of incoming data.
 
