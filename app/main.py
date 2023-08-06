@@ -1,8 +1,8 @@
 # -----------------------------------
 
 # Name: Devrishi Sikka
-# API Link: http://127.0.0.1:8000/redoc
-
+# Local API Link: http://127.0.0.1:8000/redoc
+# Public API Link: http://13.235.242.50/docs
 # -----------------------------------
 
 from routers import CategoryOperations, SKUOperations, Transactions
