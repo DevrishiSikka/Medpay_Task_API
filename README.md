@@ -2,6 +2,9 @@
 
 Build a publisher/subscribe model to process streaming data and provide an up-to-date view of incoming data.
 
+[Click here to try the API](http://13.235.242.50/docs)
+
+
 ## Getting Started
 
 1. Run using any ASGI server (eg. Uvicorn):
