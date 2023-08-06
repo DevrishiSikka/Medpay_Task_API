@@ -32,5 +32,34 @@ Build a publisher/subscribe model to process streaming data and provide an up-to
    a. Create Dockerfile with the following configuration
 
    ``` Dockerfile
+   FROM python:3.11-slim-buster
+
+   # Set the working directory in the container
+   WORKDIR /app
    
+   # Copy the requirements file to the container
+   COPY requirements.txt .
+   
+   # Install dependencies
+   RUN pip install -r requirements.txt
+   
+   # Copy the rest of the project files to the container
+   COPY . .
+   
+   # Expose the port that the application will be running on
+   EXPOSE 8000
+   
+   # Run the application
+   CMD ["gunicorn", "-w", "4", "-k", "uvicorn.workers.UvicornWorker", "app.main:app"]
+   ```
+
+   b. Build the Docker image
+
+   ```Dockerfile
+   docker build -t <IMAGE_NAME> .
+   ```
+
+   c. Run dockerfile and map port 8000 of docker container to port 80 of the EC2 machine 
+   ```Dockerfile
+   docker run -dp 80:8000 <IMAGE_NAME>
    ```
